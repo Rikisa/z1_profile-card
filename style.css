@@ -1,0 +1,139 @@
+@import url("https://fonts.google.com/specimen/Kumbh+Sans");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --dark-cyan:#19a2ae;
+    --very-dark-blue: #2d3248;
+    --dark-grayish-blue: #6a6f81;
+    --dark-grey: #969696;
+}
+
+body{
+    background-color: #1ba1ad;
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+.circle-top{
+    position: absolute;
+    bottom: 50vh;
+    right: 55vw;
+    opacity: .8;
+    width: 60vw;
+    transform: scaleX(1.2);
+}
+
+.circle-bottom{
+    position: absolute;
+    top: 50vh;
+    left: 55vw;
+    opacity: .8;
+    width: 65vw;
+    transform: scaleX(1.2);
+}
+
+.card{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 435px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 700;
+}
+
+.card-top{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 400px;
+    height: 170px;
+    background: url(/images/bg-pattern-card.svg);
+}
+
+.avatar-holder {
+    position: absolute;
+    margin: auto;
+    top: 120px;
+    right: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #ffffff;
+    background: white;
+    overflow: hidden;
+}
+
+img .avatar-holder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    position: absolute;
+    margin: auto;
+    top: 8vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    height: 40px;
+    text-align: center;
+}
+
+.name a{
+    color: var(--very-dark-blue);
+    text-decoration: none;
+}
+
+.name a span{
+    margin-top: 10px;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+}
+
+.name h5{
+    margin-top: 10px;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+}
+
+.card-info{
+    position: absolute;
+    margin: auto;
+    top: 320px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: inherit;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--very-dark-blue);
+}
+
+.card-info h6{
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    margin-top: 10px;
+}
+
