@@ -224,3 +224,36 @@ img .avatar-holder {
     }
 
 }
+
+/*Landscape*/
+
+@media screen and (max-height: 460px) and (orientation: landscape){
+    .card{
+        height: 80vh;
+    }
+
+   .card-top{
+       height: 25vh;
+   }
+   
+   .avatar-holder{
+       top: 15vh;
+   }
+
+   .name{
+       top: 15vh;
+   }
+
+   .card-info{
+       top: 50vh;
+   }
+
+   .circle-top{
+       top: -90vh;
+       left: -40vw;
+   }
+
+   .circle-bottom{
+       top: 55vh;
+   }
+}
