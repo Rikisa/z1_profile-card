@@ -203,12 +203,12 @@ img .avatar-holder {
 @media screen and (min-width: 481px) and (max-width: 768px){
     .circle-top{
         width: 600px;
-        top: -40vh;
+        top: -25vh;
     }
 
     .circle-bottom{
         width: 600px;
-        top: 60vh;
+        top: 70vh;
     }
 }
 
