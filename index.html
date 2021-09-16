@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nebojsa Petrovic">
+    <link rel="stylesheet" href="style.css">
     <!-- displays site properly based on user's device -->
 
     <link
@@ -13,11 +15,46 @@
     />
 
     <title>Profile card component</title>
-    
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style></style>
+
   </head>
   <body>
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="container">
+
+    <!--Circles-->
+      <img src="/images/bg-pattern-top.svg" alt="circle" class="circle-top">
+      <img src="/images/bg-pattern-bottom.svg" alt="circle" class="circle-bottom">
+    <!--Card-->
+      <div class="card">
+        <div class="card-top"></div>
+        <div class="avatar-holder">
+          <img src="/images/image-victor.jpg" alt="Victor Crest">
+        </div>
+        <div class="name">
+          <a href="https://github.com/Rikisa" target="_blank">Victor Crest <span>26</span></a>
+          <h5>London</h6>
+        </div>
+
+        <div class="card-info">
+          <div>
+            <p>80K</p>
+            <h6 title="Number of followers">Followers</h6>
+          </div>
+          
+          <div>
+            <p>803K</p>
+            <h6 title="Number of likes">Likes</h6>
+          </div>
+
+          <div>
+            <p>1.4K</p>
+            <h6 title="Number of photos">Photos</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+
+    Coded by <a href="https://github.com/Rikisa">Nebojsa</a>.
   </body>
 </html>

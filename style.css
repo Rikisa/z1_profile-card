@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Orbitron:wght@500&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --dark-cyan:#19a2ae;
+    --very-dark-blue: #2d3248;
+    --dark-grayish-blue: #6a6f81;
+    --dark-grey: #969696;
+}
+
+body{
+    background-color: #1ba1ad;
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.circle-top{
+    position: fixed;
+    bottom: 50vh;
+    right: 50vw;
+    opacity: .5;
+    width: 50vw;
+    transform: scaleX(1.1);
+}
+
+.circle-bottom{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    opacity: .5;
+    width: 60vw;
+    transform: scaleX(1.1);
+}
+
+.card{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 435px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 700;
+}
+
+.card-top{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 400px;
+    height: 170px;
+    background: url(/images/bg-pattern-card.svg);
+}
+
+.avatar-holder {
+    position: absolute;
+    margin: auto;
+    top: 120px;
+    right: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #ffffff;
+    background: white;
+    overflow: hidden;
+}
+
+img .avatar-holder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    position: absolute;
+    margin: auto;
+    top: 8vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    height: 40px;
+    text-align: center;
+}
+
+.name a{
+    color: var(--very-dark-blue);
+    text-decoration: none;
+}
+
+.name a span{
+    margin-top: 10px;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+}
+
+.name h5{
+    margin-top: 10px;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+}
+
+.card-info{
+    position: absolute;
+    margin: auto;
+    top: 320px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: inherit;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: var(--very-dark-blue);
+    letter-spacing: 1px;
+}
+
+.card-info h6{
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 375px){
+    .circle-top{
+        transform: scale(1.8);
+        top: -25vh;
+        left: -80vw;
+        width: 350px;
+    }
+
+    .circle-bottom{
+        transform: scale(1.8);
+        width: 350px;
+        top: 75vh;
+        left: 85vw;
+    }
+  }
+
+@media screen and (max-width: 480px) {
+    .card{
+        width: 300px;
+        height: 385px;
+        overflow: hidden;
+    }
+
+    .card-top{
+        height: 150px;
+    }
+
+    .avatar-holder{
+        top: 110px;
+    }
+
+    .name{
+        top: 15vh;
+    }
+
+    .card-info{
+        top: 290px;
+    }
+  }
+  
+
+  @media screen and (min-width: 376px) and (max-width: 480px){
+    .circle-top{
+        top: -25vh;
+        left: -75vw;
+        width: 350px;
+        transform: scale(2) ;
+
+    }
+
+    .circle-bottom{
+        width: 350px;
+        top: 70vh;
+        left: 70vw;
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .circle-top{
+        width: 600px;
+        top: -25vh;
+    }
+
+    .circle-bottom{
+        width: 600px;
+        top: 70vh;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .circle-top{
+        width: 700px;
+        top: -25vh;
+    }
+    
+    .circle-bottom{
+        width: 700px;
+        top: 50vh;
+    }
+
+}
+
+/*Landscape*/
+
+@media screen and (max-height: 460px) and (orientation: landscape){
+    .card{
+        height: 80vh;
+    }
+
+   .card-top{
+       height: 25vh;
+   }
+   
+   .avatar-holder{
+       top: 15vh;
+   }
+
+   .name{
+       top: 15vh;
+   }
+
+   .card-info{
+       top: 50vh;
+   }
+
+   .circle-top{
+       top: -90vh;
+       left: -40vw;
+   }
+
+   .circle-bottom{
+       top: 55vh;
+   }
+}
